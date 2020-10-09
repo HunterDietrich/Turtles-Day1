@@ -69,6 +69,23 @@ def pattern():
 		john.right(10)
 		x += 5
 
+def rectangle(length, color):
+        x = 0
+        while x < 4:
+            john.forward(int(input("Enter the length of the rectangle")))
+            john.left(90)
+            john.forward(int(input("Enter the width of the rectangle")))
+            john.left(90)
+            john.forward(int(input("Enter the length of the rectangle")))
+            john.left(90)
+            john.forward(int(input("Enter the width of the rectangle")))
+            john.left
+            x += 1
+
+
+
+
+
 
 if input_shape == "shape":
 	input_sides = int(input("How many sides? "))
@@ -85,3 +102,5 @@ elif input_shape == "triangle":
 	triangle(input_length, input_color)
 elif input_shape == "square":
 	square(input_length, input_color)
+elif input_shape == "rectangle":
+	rectangle(input_length, input_color)
